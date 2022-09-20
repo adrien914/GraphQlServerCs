@@ -8,4 +8,7 @@ public class Query
 
     public Task<Book?> GetBook([Service] Repository repository, Guid bookId) =>
         repository.GetBook(bookId);
+
+    public Task<Author?> GetAuthor([Service] Repository repository, Guid authorId) =>
+        repository.GetAuthor(authorId);
 }
